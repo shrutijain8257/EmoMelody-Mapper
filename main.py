@@ -69,9 +69,10 @@ def emotion_find():
                 st.markdown(song)
                 st.audio("songs/"+user_emotion+"/"+song)
 
-st.title("Emotifyo")
+st.title("EmoMelody Mapper")
 
-nav = st.sidebar.radio("", ["Home", "About Emotify", "Our Team", "Play Emotify"])
+#nav = st.sidebar.radio("", ["Home", "About Emosic", "Our Team", "Play Emosic"])
+nav = st.sidebar.radio("", ["Home", "About EmoMelody Mapper", "Play EmoMelody Mapper"])
 
 if nav == "Home":
     st.markdown("""<br>""", True)
@@ -96,8 +97,8 @@ Starting by design a very simple app that is easy to use.
     st.image("images/image-emo.jpg")
 
 
-if nav == "About Emotify":
-    st.markdown("## _Emotify - Emotion-based Music Player_")
+if nav == "About EmoMelody Mapper":
+    st.markdown("## _EmoMelody Mapper - Emotion-based Music Player_")
     st.markdown("""
       As
 a music lover, I've always felt that music players should do far
@@ -114,19 +115,7 @@ change songs on the go It calculates song weight based on LBPH to
 help users have more customized and organized play lists""")
     st.image("images/image-about-us.jpg")
 
-if nav == "Our Team":
-    col1, col2, col3 = st.beta_columns(3)
-    col1.markdown("### Warren Fernandes")
-    col1.markdown("_\"Its Time to Roll\"_")
-    col2.markdown("### Liny Mathew")
-    col2.markdown("_\"Its Time to Rock\"_")
-    col3.markdown("### Yash Deshmukh")
-    col3.markdown("_\"Its Time for Shava Shava\"_")
-    st.markdown("""<br>""", True)
-    st.markdown("_\"~Your incharge of how you feel. Don't let anyone kill your vibe. Let your Emotion flow\"_", True)
-    st.markdown("""<br>""", True)
-    st.image("images/team.jpeg")
 
-if nav == "Play Emotify":
+if nav == "Play EmoMelody Mapper":
     emotion_find()
     
